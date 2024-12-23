@@ -129,5 +129,15 @@
     </div>
     <h1><span>LOADING</span></h1>
   </div>
+
+  <script>
+    // Generate a random time between 2 and 4 seconds
+    const loadTime = Math.floor(Math.random() * 3 + 2) * 1000; // 2-4 seconds in milliseconds
+
+    // Redirect after the specified loading time
+    setTimeout(() => {
+      window.location.href = "open.html"; // Redirect to open.html
+    }, loadTime);
+  </script>
 </body>
 </html>
